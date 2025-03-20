@@ -1,0 +1,87 @@
+
+.pageHeader {
+  overflow: hidden;
+  border-bottom: solid 8px $danger;
+
+}
+
+.tournament-cards-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: inherit
+}
+
+.tournament-cards-container::-webkit-scrollbar {
+  display: none
+}
+
+.tournament-carousel {
+  height: 70px
+}
+
+.carouselButton {
+  transition: all .3s ease
+}
+
+.carouselButton.prev {
+  transform: rotate(90deg)
+}
+
+.carouselButton.next {
+  transform: rotate(-90deg)
+}
+
+.tournament-card {
+  background: $white;
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex;
+  border-left: 8px solid $primary;
+  gap: 8px;
+  box-shadow: 0 2px 4px #0000001a;
+  transition: transform .2s ease
+}
+
+.gh_active{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.tournament-card:hover {
+  transform: translateY(-2px)
+}
+
+.date {
+  background: $primary;
+  color: $white;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 60px
+}
+
+.tournament-info {
+  flex-grow: 1
+}
+
+.game-name {
+  color: $danger;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 4px
+}
+
+.players {
+  color: gray;
+  font-size: .9rem;
+  margin-bottom: 4px
+}
+
+.points {
+  background-color: #007bff1a;
+  color: #007bff;
+  font-size: .8rem
+}
+
+.game-icon {
+  width: 50px;
+  height: 50px
+}
